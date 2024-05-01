@@ -25,37 +25,56 @@ textarea {
 
 :root {
     /* FONTS */
-    --FF: "Alice", serif;
     --FF-HEADINGS: "Quattrocento", serif;
+    --FF: "Alice", serif;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BGCOLOR: #563C2D;
     --BGCOLOR-FADE: #F1D2B2;
+    --BGCOLOR: #563C2D;
     --BGIMAGE: linear-gradient(to top, var(--BGCOLOR), var(--BGCOLOR-FADE));
-    --BODY-BGCOLOR: #E9EBE8;
+    --BODY-BGCOLOR: #F2F2F2;
+    --BORDER-COLOR: #303030;
+    --BUTTON-COLOR: #F2F2F2;
     --FONT-COLOR: #040404;
-    --BORDER-COLOR: #2E2925;
+    --HEADER-BGCOLOR: #040404;
+    --HEADER-COLOR: #F2F2F2;
+    --HERO-BGCOLOR: hsl(34, 96%, 68%, 0.75);
+    --HERO-COLOR: #F2F2F2;
     --HIGHLIGHT-COLOR: #521509;
+    --LINK-ACTIVE: #563C2D;
     --LINK-COLOR: #040404;
     --LINK-HOVER: hsla(0, 0%, 2%, 0.6);
-    --LINK-ACTIVE: #563C2D;
-    --HEADER-BGCOLOR: #040404;
-    --HEADER-COLOR: #E9EBE8;
-    --NAV-BGCOLOR: #E9EBE8;
-    --HERO-BGCOLOR: hsl(34, 96%, 68%, 0.75);
-    --HERO-COLOR: #E9EBE8;
+    --NAV-BGCOLOR: #F2F2F2;
 
     /* BORDERS */
-    --BORDERS: 1px solid var(--BORDER-COLOR);
     --BORDER-RADIUS: 5px;
+    --BORDERS: 1px solid var(--BORDER-COLOR);
 
     /* STANDARD PADDING */
-    --PADDING-TOP-BOTTOM: 0.25em;
     --PADDING-SIDE: 2.5%;
+    --PADDING-TOP-BOTTOM: 0.25em;
 
     /* STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR-FADE: #2E2925;
+        --BGCOLOR: #040404;
+        --BODY-BGCOLOR: #303030;
+        --BORDER-COLOR: #F2F2F2;
+        --BUTTON-COLOR: #040404;
+        --FONT-COLOR: #F2F2F2;
+        --HEADER-COLOR: #F2F2F2;
+        --HERO-COLOR: #303030;
+        --HIGHLIGHT-COLOR: #F2F2F2;
+        --LINK-ACTIVE: hsl(34, 96%, 68%, 0.75);
+        --LINK-COLOR: #F2F2F2;
+        --LINK-HOVER: #F1D2B2;
+        --NAV-BGCOLOR: #171717;
+    }
 }
 
 /* || UTILITY CLASSES */
@@ -258,7 +277,8 @@ a:active {
     padding: 0.5em;
     border-radius: var(--BORDER-RADIUS);
     background-color: var(--HIGHLIGHT-COLOR);
-    color: var(--HEADER-COLOR);
+    color: var(--BUTTON-COLOR);
+    font-weight: bold;
 }
 
 /* || MENU */
