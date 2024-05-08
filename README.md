@@ -6,7 +6,7 @@ This project is a modern and responsive website inspired by Dave Gray's [CSS Com
 ## Features
 - **Responsive Design**: Ensures that the website looks great on both desktop and mobile devices.
 - **Modern CSS**: Utilizes the latest CSS features such as variables, utility classes, and media queries.
-- **Dark Mode**: A toggleable dark mode to enhance user experience in different lighting conditions.
+- **Dark Mode**: A prefers-color-scheme dark mode in CSS to enhance user experience in different lighting conditions.
 - **Interactive Elements**: JavaScript features for dynamic user interactions.
 
 ## Lessons Learned
