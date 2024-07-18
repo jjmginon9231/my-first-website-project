@@ -1,5 +1,7 @@
 # My First Website Project
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a6506d1-d148-4773-9ea9-141de0841168/deploy-status)](https://app.netlify.com/sites/my-first-website-project-2024/deploys)
+
 ## Overview
 This project is a modern and responsive website inspired by Dave Gray's [CSS Complete Project for Beginners](https://www.youtube.com/watch?v=cMN2Odm5ieA) tutorial. The goal is to create a fictional pizzeria website using HTML and CSS, focusing on responsive design and modern CSS practices.
 
